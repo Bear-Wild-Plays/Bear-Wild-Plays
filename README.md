@@ -1,4 +1,4 @@
-### Hi there — I'm [Your Name] 👋
+### Hi there — I am [Bear Wild] 👋
 **Content Engineer | AI Product Quality, Prompt Architecture & Evaluation Systems**
 
 I bridge **editorial judgment, user experience, and LLM reliability**—turning subjective human taste into structured rubrics, golden datasets, and measurable AI product improvements.
