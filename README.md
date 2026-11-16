@@ -1,7 +1,7 @@
 ### Hi there — I am Bear Wild 👋, (real name, Sean Wilda)
 **Content Engineer | AI Product Quality, Prompt Architecture & Evaluation Systems**
 
-I bridge **editorial judgment, user experience, and LLM reliability**—turning subjective human taste into structured rubrics, golden datasets, and measurable AI product improvements.
+I bridge **editorial judgment, user experience, and LLM reliability**—turning subjective human taste into structured rubrics, golden datasets, and measurable AI product improvements. As a Brooklyn area playwright I have swirled the cauldron of creativity and applied creativity in near zero budget scenarios as well as full-fledged productions to excellent reviews. At my corporate job, after training an AI that AI absorbed my position, so I decided to level-up and train myself on the technical side of things. Doing so I saw a perfect place for me. I have never been one thing my whole life, I mainly existed in-between places. My niche is so niched that only AI, ha, could create a position for me --- a Content Engineer. I know the responsibilities are perfectly suited for me, but that is not enough. So, with this GitHub page, The Fossick Finder, and my website I have faith I can prove I fit in the exact shape niched out for a Content Engineer position. 
 
 ---
 
