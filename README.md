@@ -1,62 +1,42 @@
-### HeLLLoooooo therrrrrrrrre.... — I am Bear Wild 👋, (real name, Sean Wilda)
-**Content Engineer | AI Product Quality, Prompt Architecture & Evaluation Systems**
+#### HeLLLoooooo therrrrrrrrre.... — I am Bear Wild 👋 (real name, Sean Wilda)
 
-I bridge **editorial judgment, user experience, and LLM reliability**—turning subjective human taste into structured rubrics, golden datasets, and measurable AI product improvements. As a Brooklyn area playwright I have swirled the cauldron of creativity and applied creativity in near zero budget scenarios as well as full-fledged productions to excellent reviews. At my corporate job, after training an AI that AI absorbed my position, so I decided to level-up and train myself on the technical side of things. Doing so I saw a perfect place for me. I have never been one thing my whole life, I mainly existed in-between places. My niche is so niched that only AI, ha, could create a position for me --- a Content Engineer. I know the responsibilities are perfectly suited for me, but that is not enough. So, with this GitHub page, The Fossick Finder, and my website I have faith I can prove I fit in the exact shape niched out for a Content Engineer position. 
+**Content Engineer | Strategic Demand Planning & Analytics | AI Product Quality & Prompt Architecture** 
 
----
+I bridge **editorial judgment, quantitative supply chain analytics, and LLM reliability**—turning subjective human taste and ambiguous business inputs into structured rubrics, deterministic schemas, and measurable AI product improvements. 
 
-### 🔍 Featured Work: Content Engineering & LLM Evaluation
+After nearly a decade managing complex global SKUs and product lifecycles at **The Topps Company / Fanatics**—where I helped train an internal Claude AI system that eventually absorbed my operational role—I leveled up across the technical stack. Combining an M.F.A. in Playwriting with **Microsoft Azure AI & Power BI certifications**, **SQL/Python forecasting**, and **Model Context Protocol (MCP) engineering**, I build systems where human taste and frontier AI meet. 
 
-# ⛏️ The Fossick Finder
+#### 🔍 Featured Portfolio Projects
 
-**An AI-powered film & TV discovery engine combining multi-stage cascading retrieval, episode-level TVmaze metadata enrichment, and structured LLM semantic reranking.**
+##### 1. [⛏ The Fossick Finder](https://github.com/Bear-Wild-Plays/the-fossick-finder)
 
-[![Live App](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://thefossickfinder.streamlit.app)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Gemini API](https://img.shields.io/badge/Google_Gemini-3.8_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+*Content Engineering, Multi-Stage Retrieval & LLM Evaluation* 
 
----
+* **Architecture:** 3-tier cascading retrieval (TMDB API) + granular episode enrichment (TVmaze API) + semantic reranking via Google Gemini.
+* **AI Engineering:** Decoupled prompt engine (prompts/prospector_prompts.py), strict JSON schema enforcement, and editorial curation rubrics.
 
-## 🎯 Project Overview
+##### 2. [🍄 Smurf Village Demand Forecasting & SQL Pipeline](https://github.com/Bear-Wild-Plays/smurf-village-demand-forecasting-sql)
 
-Traditional streaming search engines rely on rigid tag matching and popularity sorting—forcing users to scroll endlessly when searching for specific narrative vibes (e.g., *"A tense time-loop bottle episode"* or *"Moody 1970s neo-noir with a cynical detective"*).
+*Statistical Demand Planning, SQL Variance Analytics & Grounded S&OP Reporting* 
 
-**The Fossick Finder** solves this by treating media discovery as a **two-stage retrieval and editorial curation pipeline**:
-1. **3-Tier Cascading Retrieval (Recall):** Queries TMDB with structured metadata filters (Decade, Genre, Vibe/Sort) and automatically relaxes constraints when candidate pools run dry—guaranteeing zero dead-end searches.
-2. **Unified Semantic Reranking & Episode Expansion (Precision):** Enriches TV candidates with granular episode synopses via the **TVmaze API**, then uses **Google Gemini (`gemini-3.8-flash`)** with strict JSON schema enforcement to rank the top 6 matches and generate bespoke *Prospector's Notes*.
+* **SQL & KPI Layer:** CTEs and window functions (AVG OVER, LAG) computing **MAPE, WMAPE, Forecast Bias %**, and **Weeks-of-Supply (WOS)** exception flags.
+* **Forecasting & Scenarios:** Seasonal **Holt-Winters Exponential Smoothing** in Python with out-of-sample backtesting, promotional lift, and supply disruption modeling, paired with schema-guarded LLM S&OP executive briefings.
 
----
+##### 3. [📘 A Smurfy Enterprise Catalog MCP Server](https://github.com/Bear-Wild-Plays/a-smurfy-enterprise-catalog-mcp)
 
-## 🏗️ System Architecture
+*Model Context Protocol (MCP), Schema Normalization & Deterministic BOM Validation* 
 
-```text
-User Query (Decade + Genre + Vibe + Free-Text Mood)
-       │
-       ▼
-┌──────────────────────────────────────────────────────────┐
-│ Stage 1: 3-Tier Cascading Candidate Recall (TMDB API)    │
-│  • Tier 1: Exact Decade + Genre + Aesthetic Filters      │
-│  • Tier 2: Relax Decade constraint (if < 6 candidates)   │
-│  • Tier 3: Broaden to top-rated genre/vibe pool          │
-└──────────────────────────────────────────────────────────┘
-       │
-       ├─── [Movies] ──────────────────────────┐
-       │                                       ▼
-       └─── [TV Shows] ──► Stage 2: TVmaze Episode Expansion
-                            • Fetches granular episode synopses
-                            • Strips HTML & builds composite IDs
-                                               │
-                                               ▼
-┌──────────────────────────────────────────────────────────┐
-│ Stage 3: Semantic Reranking & Editorial Curation         │
-│  • Decoupled prompt engine (prompts/prospector_prompts)  │
-│  • Structured JSON output (Top 6 ranked matches + Notes) │
-└──────────────────────────────────────────────────────────┘
-       │
-       ▼
-┌──────────────────────────────────────────────────────────┐
-│ Stage 4: Cross-Database Appraisal & Session Pagination   │
-│  • Enriches with IMDb, Rotten Tomatoes & Metacritic      │
-│  • st.session_state "Dig Deeper" loads 6 more gems       │
-│    without burning redundant LLM or API quota            │
-└──────────────────────────────────────────────────────────┘
+* **Agentic ERP Bridge:** Built on Anthropic’s **Model Context Protocol (MCPServer)** with strict **Pydantic / JSON Schemas** to connect rigid Oracle-style ERP catalogs with AI agents.
+* **Fuzzy-to-Structured QA:** Normalizes ambiguous colloquial villager queries into canonical SKU IDs, inspects multi-layer Bills of Materials (BOMs), and enforces deterministic millimeter thickness tolerances.
+
+#### 🛠 Core Tech Stack & Certifications
+
+* **AI & Evaluation:** Prompt/Context Engineering, Model Context Protocol (MCP), Structured JSON/Pydantic Schemas, Evaluation Rubrics & Failure Mode Taxonomies.
+* **Data & Forecasting:** SQL (CTEs, Window Functions), Python (pandas, statsmodels, scikit-learn), Power BI (DAX, Semantic Models), Advanced Excel (90th Percentile Benchmark), Oracle Fusion & Oracle EBS.
+* **Credentials:** Microsoft Certified: **Azure AI Fundamentals (AI-901)** · Microsoft Certified: **AI Business Professional (AB-730)** · **Power BI Data Analytics (PL-300)** *(In Progress)*.
+
+#### 📫 Connect
+
+* **Portfolio:** [www.bearwildplays.com](https://www.bearwildplays.com)
+* **LinkedIn:** [linkedin.com/in/sean-wilda-196a2713](https://www.linkedin.com/in/sean-wilda-196a2713/)
+* **Microsoft Learn:** [learn.microsoft.com/en-us/users/seandavidwilda-6633](https://learn.microsoft.com/en-us/users/seandavidwilda-6633/)
